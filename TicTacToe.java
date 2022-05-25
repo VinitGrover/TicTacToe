@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class TicTacToe {
 
+
     static Scanner sc = new Scanner(System.in);
 
     void uc1(char[] ch) {
@@ -14,6 +15,7 @@ public class TicTacToe {
 
     char uc2() {
         System.out.print("Enter X or O : ");
+
         return sc.next().charAt(0);
     }
 
@@ -50,7 +52,6 @@ public class TicTacToe {
         }
 
         t1.showBoard(choice, ch);
-
 
     }
 }
