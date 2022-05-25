@@ -16,6 +16,10 @@ public class TicTacToe {
         return sc.next().charAt(0);
     }
 
+    void showBoard(){
+        System.out.print("   |   |\n-----------\n   |   |\n-----------\n   |   |");
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to Tic Tac Toe program");
 
@@ -35,6 +39,7 @@ public class TicTacToe {
             choice1 = choice;
             choice2 = 'X';
         }
-
+      
+        t1.showBoard();
     }
 }
