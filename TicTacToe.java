@@ -21,12 +21,9 @@ public class TicTacToe {
         System.out.print("Enter desired position in the board : ");
         int position = sc.nextInt();
 
-        if (ch[position] != ' ')
-            System.out.println("input choice is already occupied");
-        else {
             ch[position] = choice;
             System.out.print(" " + ch[1] + " | " + ch[2] + " | " + ch[3] + " \n-----------\n " + ch[4] + " | " + ch[5] + " | " + ch[6] + " \n-----------\n " + ch[7] + " | " + ch[8] + " | " + ch[9] + " ");
-        }
+        
     }
 
     public static void main(String[] args) {
