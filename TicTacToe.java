@@ -39,10 +39,7 @@ public class TicTacToe {
             choice1 = choice;
             choice2 = 'X';
         }
-
+      
         t1.showBoard();
-
-
-
     }
 }
