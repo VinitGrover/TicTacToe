@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 import java.util.Random;
+
 import java.util.Scanner;
 
 public class TicTacToe {
@@ -15,6 +16,7 @@ public class TicTacToe {
     }
 
     char uc2() {
+
         Random r = new Random();
         int x = r.nextInt(2);
 
