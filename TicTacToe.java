@@ -1,4 +1,7 @@
 package com.bridgelabz;
+import java.util.Random;
+
+import java.util.Scanner;
 
 import java.util.Random;
 
@@ -123,6 +126,7 @@ public class TicTacToe {
         ch = new char[10];
 
         TicTacToe t1 = new TicTacToe();
+
         int i = 0;
 
         while (i == 0) {
@@ -141,5 +145,6 @@ public class TicTacToe {
             if (c == 'n')
                 i = 1;
         }
+
     }
 }
