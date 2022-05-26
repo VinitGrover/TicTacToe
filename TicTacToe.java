@@ -1,12 +1,13 @@
 package com.bridgelabz;
 
-import jdk.swing.interop.SwingInterOpUtils;
 
+import jdk.swing.interop.SwingInterOpUtils;
 import java.util.Random;
 
 import java.util.Scanner;
 
 public class TicTacToe {
+
     static Scanner sc = new Scanner(System.in);
     static char winnerName, turn;
     static boolean flag = true;
@@ -124,6 +125,7 @@ public class TicTacToe {
         System.out.println("Welcome to Tic Tac Toe program");
 
         ch = new char[10];
+
         TicTacToe t1 = new TicTacToe();
         t1.uc1(ch);
 
