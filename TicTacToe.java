@@ -3,6 +3,10 @@ import java.util.Random;
 
 import java.util.Scanner;
 
+import java.util.Random;
+
+import java.util.Scanner;
+
 public class TicTacToe {
 
     static Scanner sc = new Scanner(System.in);
@@ -122,16 +126,25 @@ public class TicTacToe {
         ch = new char[10];
 
         TicTacToe t1 = new TicTacToe();
-        t1.uc1(ch);
 
-        char choice = t1.uc2();
+        int i = 0;
 
-        t1.showBoard(choice);
+        while (i == 0) {
+            t1.uc1(ch);
 
-        if (turn != "draw")
-            System.out.println("\nThe Winner is " + turn);
-        else
-            System.out.println("\nThe game is drawn");
+            char choice = t1.uc2();
+
+            t1.showBoard(choice);
+
+            if (turn != "draw")
+                System.out.println("\nThe Winner is " + turn);
+            else
+                System.out.println("\nThe game is drawn");
+            System.out.println("Do you want to play again, enter y or n : ");
+            char c = sc.next().charAt(0);
+            if (c == 'n')
+                i = 1;
+        }
 
     }
 }
